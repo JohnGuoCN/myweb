@@ -1,0 +1,22 @@
+<html>  
+<title>获取服务器端环境信息</title> 
+<style type="text/css">  
+body { line-height: 25px;} 
+</style>  
+<body><ul><li>主机名：<%=Request.ServerVariables("Server_Name")%></li>    
+  <li>接受请求的服务器的IP地址：<%=Request.ServerVariables("Local_Addr")%></li>   
+  <li>客户端的IP地址：<%=Request.ServerVariables("Remote_Addr")%></li>   
+  <li>主机端口：<%=Request.ServerVariables("Server_Port")%></li>    
+  <li>服务器运行的软件的名称和版本：
+<%=Request.ServerVariables("Server_Software")%></li>    
+  <li>当前网页相对于站点根目录的URL：<%=Request.ServerVariables("URL")%></li>   
+  <li>当前页面转换后的物理路径：<%=Request.ServerVariables("Path_Translated")%></li>   
+  <li>浏览器返回的Cookie：<%=Request.ServerVariables("Http_Cookie")%></li>    
+  <li>服务器运行的软件的名称和版本：
+<%=Request.ServerVariables("Server_Software")%></li>    
+  <li>客户端语言：<%=Request.ServerVariables("Http_Accept_Language")%></li>    
+  <li>浏览器与服务器端建立的联机类型：
+<%=Request.ServerVariables("Http_Connection")%></li> 
+</ul> 
+</body> 
+</html>
