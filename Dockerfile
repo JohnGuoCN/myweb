@@ -1,2 +1,2 @@
 From tomcat
-ADD john.html /usr/local/tomcat/webapps/john/
+ADD myweb.html /usr/local/tomcat/webapps/myweb/
